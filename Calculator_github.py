@@ -126,121 +126,33 @@ def cmultiply():
         f_n = float(fn)
         e.delete(0, END)
 
-def c1():
+
+def cnum(num) :
+    
     if e.get() == "please enter a number":
         e.delete(0, END)
-        button_add(1)
+        button_add(num)
     elif e.get() == "please enter a number not letters":
         e.delete(0, END)
-        button_add(1)
+        button_add(num)
     else:
-        button_add(1)
+        button_add(num)
 
-def c2():
-    if e.get() == "please enter a number":
-        e.delete(0, END)
-        button_add(2)
-    elif e.get() == "please enter a number not letters":
-        e.delete(0, END)
-        button_add(2)
-    else:
-        button_add(2)
 
-def c3():
-    if e.get() == "please enter a number":
-        e.delete(0, END)
-        button_add(3)
-    elif e.get() == "please enter a number not letters":
-        e.delete(0, END)
-        button_add(3)
-    else:
-        button_add(3)
+button1 = Button(root,text = 1,padx = 40 , pady =20, command = lambda: cnum(1)).grid(row =3, column = 0)
+button2 = Button(root,text = 2,padx = 40 , pady =20, command = lambda: cnum(2)).grid(row =3, column = 1)
+button3 = Button(root,text = 3,padx = 40 , pady =20, command = lambda: cnum(3)).grid(row =3, column = 2)
 
-def c4():
-    if e.get() == "please enter a number":
-        e.delete(0, END)
-        button_add(4)
-    elif e.get() == "please enter a number not letters":
-        e.delete(0, END)
-        button_add(4)
-    else:
-        button_add(4)
+button4 = Button(root,text = 4,padx = 40 , pady =20, command = lambda: cnum(4)).grid(row =2, column = 0)
+button5 = Button(root,text = 5,padx = 40 , pady =20, command = lambda: cnum(5)).grid(row =2, column = 1)
+button6 = Button(root,text = 6,padx = 40 , pady =20, command = lambda: cnum(6)).grid(row =2, column = 2)
 
-def c5():
-    if e.get() == "please enter a number":
-        e.delete(0, END)
-        button_add(5)
-    elif e.get() == "please enter a number not letters":
-        e.delete(0, END)
-        button_add(5)
-    else:
-        button_add(5)
+button7 = Button(root,text = 7,padx = 40 , pady =20, command = lambda: cnum(7)).grid(row =1, column = 0)
+button8 = Button(root,text = 8,padx = 40 , pady =20, command = lambda: cnum(8)).grid(row =1, column = 1)
+button9 = Button(root,text = 9,padx = 40 , pady =20, command = lambda: cnum(9)).grid(row =1, column = 2)
 
-def c6():
-    if e.get() == "please enter a number":
-        e.delete(0, END)
-        button_add(6)
-    elif e.get() == "please enter a number not letters":
-        e.delete(0, END)
-        button_add(6)
-    else:
-        button_add(6)
+button0 = Button(root,text = 0,padx = 40 , pady =20, command =  lambda: cnum(0)).grid(row =4, column = 0)
 
-def c7():
-    if e.get() == "please enter a number":
-        e.delete(0, END)
-        button_add(7)
-    elif e.get() == "please enter a number not letters":
-        e.delete(0, END)
-        button_add(7)
-    else:
-        button_add(7)
-
-def c8():
-    if e.get() == "please enter a number":
-        e.delete(0, END)
-        button_add(8)
-    elif e.get() == "please enter a number not letters":
-        e.delete(0, END)
-        button_add(8)
-    else:
-        button_add(8)
-
-def c9():
-    if e.get() == "please enter a number":
-        e.delete(0, END)
-        button_add(9)
-    elif e.get() == "please enter a number not letters":
-        e.delete(0, END)
-        button_add(9)
-    else:
-        button_add(9)
-
-def c0():
-    if e.get() == "please enter a number":
-        e.delete(0, END)
-        button_add(0)
-    elif e.get() == "please enter a number not letters":
-        e.delete(0, END)
-        button_add(0)
-    else:
-        button_add(0)
-
-#button for each number
-
-button1 = Button(root,text = 1,padx = 40 , pady =20, command = c1,).grid(row =3, column = 0)
-button2 = Button(root,text = 2,padx = 40 , pady =20, command =c2).grid(row =3, column = 1)
-button3 = Button(root,text = 3,padx = 40 , pady =20, command = c3).grid(row =3, column = 2)
-
-button4 = Button(root,text = 4,padx = 40 , pady =20, command = c4).grid(row =2, column = 0)
-button5 = Button(root,text = 5,padx = 40 , pady =20, command = c5).grid(row =2, column = 1)
-button6 = Button(root,text = 6,padx = 40 , pady =20, command = c6).grid(row =2, column = 2)
-
-button7 = Button(root,text = 7,padx = 40 , pady =20, command = c7).grid(row =1, column = 0)
-button8 = Button(root,text = 8,padx = 40 , pady =20, command = c8).grid(row =1, column = 1)
-button9 = Button(root,text = 9,padx = 40 , pady =20, command = c9).grid(row =1, column = 2)
-
-button0 = Button(root,text = 0,padx = 40 , pady =20, command = c0).grid(row =4, column = 0)
 add_button = Button(root,text = "+",padx = 39, pady = 20, command =cadd,bg="#D1E3D1").grid(row =4,column =1)
 equal_button = Button(root,text = "=", padx = 39,pady=20, command = button_equal,bg="#e9def2").grid(row = 5,column=0)
 
